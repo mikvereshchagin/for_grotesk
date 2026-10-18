@@ -29,6 +29,9 @@
 body {
     background-color: #ffffff;
     color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .app-container {
@@ -38,7 +41,6 @@ body {
     background-color: var(--bg-card);
     border-radius: 0;
     position: relative;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -891,12 +893,19 @@ textarea.input-field {
     padding: 14px 32px;
 }
 
-.footer {
+.footer-wrapper {
     background-color: var(--pink-bg);
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
+    padding: 0 45px;
 }
 
 .footer-copy {
@@ -919,7 +928,8 @@ textarea.input-field {
 }
 
 @media (min-width: 1800px) {
-    .app-container {
+    .app-container,
+    .footer {
         max-width: 1440px;
     }
 }
@@ -1012,7 +1022,7 @@ textarea.input-field {
         width: 100%;
     }
 
-    .footer {
+    .footer-wrapper {
         flex-direction: column;
         gap: 20px;
         text-align: center;

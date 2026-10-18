@@ -19,6 +19,6 @@ onMounted(() => {
   <div class="app-container" :class="{ 'checkout-page': isCheckout }">
     <TheHeader />
     <router-view />
-    <TheFooter />
   </div>
+  <TheFooter />
 </template>
