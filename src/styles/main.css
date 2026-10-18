@@ -960,6 +960,10 @@ textarea.input-field {
     text-align: left;
 }
 
+.breadcrumbs-mobile {
+    display: none;
+}
+
 @media (min-width: 1800px) {
     .app-container,
     .footer {
@@ -1072,5 +1076,29 @@ textarea.input-field {
 
     .btn-back-cart {
         width: 100%;
+    }
+
+    .page-title.page-title--checkout .back-btn,
+    .breadcrumbs {
+        display: none;
+    }
+
+    .breadcrumbs-mobile {
+        display: flex;
+        margin: 0;
+        padding: 8px;
+        height: 64px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .breadcrumbs-mobile .back-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: #F2F2F2;
+    }
+
+    .checkout-page .breadcrumbs {
+        padding: 8px;
     }
 }

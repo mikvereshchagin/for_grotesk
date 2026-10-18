@@ -22,6 +22,10 @@ const store = useCartStore()
       <span>Корзина</span>
     </div>
 
+    <div class="breadcrumbs breadcrumbs-mobile">
+      <span>Корзина</span>
+    </div>
+
     <h1 class="page-title">Корзина <span class="count">{{ store.totalQty }} шт.</span></h1>
 
     <div class="cart-layout">
