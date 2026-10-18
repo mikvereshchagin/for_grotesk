@@ -48,3 +48,10 @@ scripts/
   check-node.mjs       # проверка версии Node перед запуском
 ```
 
+
+## Деплой на GitHub Pages
+
+Используется hash-режим Vue Router (`/#/checkout`) и `base: '/for_grotesk/'` —
+сайт работает на статическом хостинге без настройки SPA-fallback.
+
+Пошаговая инструкция по выкладке и отправке на проверку — в [DEPLOY.md](DEPLOY.md).
