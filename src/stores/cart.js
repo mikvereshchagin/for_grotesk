@@ -11,7 +11,7 @@ export const useCartStore = defineStore('cart', () => {
 
   const appliedPromo = ref(null)
   const paymentMethod = ref('online')
-  const buyer = ref({ name: '', surname: '', phone: '', email: '', comment: '' })
+  const buyer = ref({ name: '', surname: '', phone: '', email: '', comment: '', subscribe: false })
   const orderNumber = ref('')
 
   async function loadProducts() {
@@ -124,6 +124,7 @@ export const useCartStore = defineStore('cart', () => {
         customer,
         payment_method: paymentMethod.value,
         comment: buyer.value.comment,
+        subscribe: buyer.value.subscribe,
       },
       ...selectedItems.value.map((item) => ({
         id: item.id,

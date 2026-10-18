@@ -766,6 +766,16 @@ textarea.input-field {
     height: 100px;
 }
 
+.buyer-subscribe {
+    display: none;
+    margin-top: 16px;
+}
+
+.buyer-subscribe .custom-checkbox:checked {
+    background-color: #f23051;
+    border-color: #f23051;
+}
+
 .payment-options {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1052,6 +1062,10 @@ textarea.input-field {
 
     .payment-options {
         grid-template-columns: 1fr;
+    }
+
+    .buyer-subscribe {
+        display: flex;
     }
 
     .checkout-actions {

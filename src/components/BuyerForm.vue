@@ -51,5 +51,10 @@ const store = useCartStore()
       <label>Комментарий к заказу</label>
       <textarea v-model="store.buyer.comment" class="input-field" placeholder="Напишите свои пожелания..."></textarea>
     </div>
+
+    <label class="checkbox-label buyer-subscribe">
+      <input v-model="store.buyer.subscribe" type="checkbox" class="custom-checkbox" />
+      Хочу получать уведомления о скидках и специальных предложениях
+    </label>
   </div>
 </template>
