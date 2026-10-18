@@ -62,7 +62,7 @@ function placeOrder() {
 
       <div class="summary-sidebar">
         <SummaryCard title="Ваш заказ:">
-          <button type="button" class="btn-primary" @click="placeOrder">Оформить заказ</button>
+          <button type="button" class="checkout-btn" @click="placeOrder">Оформить заказ</button>
         </SummaryCard>
         <PromoCode :initially-open="true" />
       </div>

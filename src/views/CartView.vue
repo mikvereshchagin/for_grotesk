@@ -18,7 +18,7 @@ const store = useCartStore()
           <polyline points="9 22 9 12 15 12 15 22"></polyline>
         </svg>
       </span>
-      <span>/</span>
+      <span class="breadcrumbs-sep">/</span>
       <span>Корзина</span>
     </div>
 
@@ -58,9 +58,11 @@ const store = useCartStore()
 
       <div class="summary-sidebar">
         <SummaryCard title="Ваша корзина:">
-          <button type="button" class="btn-primary" :disabled="store.selectedItems.length === 0" @click="router.push('/checkout')">
+          <button type="button" class="checkout-btn" :disabled="store.selectedItems.length === 0" @click="router.push('/checkout')">
             К оформлению
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.00023 6.99992L12.5862 6.99992L7.2932 1.70696C6.90268 1.31643 6.90268 0.683418 7.2932 0.292893C7.68373 -0.097631 8.31674 -0.097631 8.70727 0.292893L15.7073 7.29289L15.7756 7.36907C16.096 7.76184 16.0734 8.34084 15.7073 8.70696L8.70727 15.707C8.31674 16.0975 7.68373 16.0975 7.2932 15.707C6.90268 15.3164 6.90268 14.6834 7.2932 14.2929L12.5862 8.99992L1.00023 8.99992C0.44795 8.99992 0.000234706 8.55221 0.000234699 7.99992C0.000234693 7.44764 0.447949 6.99992 1.00023 6.99992Z" fill="white"/>
+            </svg>
           </button>
         </SummaryCard>
         <PromoCode />
